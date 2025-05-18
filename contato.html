@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Portfólio pessoal (CV online)</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: larger; /* tamanho da fonte */
+       }
+
+        .menu-container {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        /* estrutura do menu */
+        .menu-box {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+     
+        }
+        /* cor e transição do menu */
+        
+        .menu-box li {
+            border: 2px solid #6d9ddc;
+            border-radius: 8px;
+            padding: 8px 16px;
+            background-color: white;
+            transition: background-color 0.3s ease;
+        }
+        /* cor que a opção fica quando passa o mouse */
+        .menu-box li:hover {
+            background-color: #dae1e6;
+        }
+        /* cor do menu */
+        .menu-box li a {
+            text-decoration: none;
+            color: #287ce9;
+            font-weight: bold;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            text-align: justify;
+            max-width: 800px;     /* Largura máxima do conteúdo */
+            margin: 40px auto;    /* Centraliza horizontalmente */
+            padding: 0 20px;      /* Espaçamento interno lateral */
+            text-align: justify;  /* Faz o alinhamento do texto */
+        }
+        .h3{
+            color: #287ce9;
+            font-size: larger;
+            font-family: sans-serif;
+        }
+        .container {
+            background-color: #287ce9;
+            height: 100px;
+            width: 80%;         /* define largura menor, por exemplo 80% da tela */
+            margin: 0 auto;     /* centraliza horizontalmente */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }  
+    .form-container {
+      margin-top: 60px; /* distância do topo */
+      display: flex;
+      justify-content: center;
+    }
+
+    form {
+      width: 300px;
+      padding: 20px;
+      border: 10px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    form h2 {
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #287ce9;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1a5dbb;
+    }
+    </style>
+</head>
+<body>
+    <header class="container">
+
+  <h1 style="color: white; text-align: center;">Pablo Alves Coelho</h1>
+    </header>
+    <!-- cria o menu e inseri o link em cada opção -->
+    <nav class ="menu-container"> 
+        <ul class ="menu-box"> 
+            <li><a href="index.html#">Sobre mim</a></li>
+            <li><a href="formacao.html#">Formação</a></li>
+            <li><a href="portifolio.html#">Portifólio</a></li>
+            <li><a href="contato.html#">Contato</a></li>
+        
+        </ul>
+    </nav>
+  <div class="form-container">
+    <form>
+      <h3>Contato</h3>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+</body>
+</html>
